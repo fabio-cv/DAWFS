@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Formulário de Registo de Utilizador</h1>
+
+    <form>
+        <fieldset id="formularioDeRegisto">
+            <div id="nome">
+                <label for="nomeCompleto">Nome Completo</label><br>
+                <input type="text" id="nomeCompleto""><br><br>
+        </div>
+
+        <div id=" e-mail">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email"><br><br>
+            </div>
+
+            <div id="Palavra-passe">
+                <label for="password">Palavra-passe:</label><br>
+                <input type="password" id="password"><br><br>
+            </div>
+
+            <div id="age">
+                <label for="idade">Idade:</label><br>
+                <input type="number" id="idade" min="0" max="150" step="1"><br><br><br>
+            </div>
+
+
+            <div id="gender">
+                <label>Gênero:</label><br><br>
+
+                <input type="radio" id="masculino" name="genero" value="M">
+                <label for="masculino">Masculino</label><br>
+
+                <input type="radio" id="feminino" name="genero" value="F">
+                <label for="feminino">Feminino</label><br>
+
+                <input type="radio" id="outro" name="genero" value="O">
+                <label for="outro">Outro</label><br><br><br>
+            </div>
+
+
+            <div id="interest">
+                <label>Interesses:</label><br><br>
+
+                <input type="checkbox" id="musica" name="musica">
+                <label for="musica">Música</label><br>
+
+                <input type="checkbox" id="desporto" name="desporto">
+                <label for="desporto">Desporto</label><br>
+
+                <input type="checkbox" id="tecnologia" name="tecnologia">
+                <label for="tecnologia">Tecnologia</label><br><br>
+                <br>
+            </div>
+
+            <div id="country">
+                <Label for="pais">País:</Label><br>
+                <select id="pais" name="pais" required>
+                    <option value="" disabled selected>-- Seleciona um país --</option>
+                    <option value="">Angola</option>
+                    <option value="">Brasil</option>
+                    <option value="">Cabo Verde</option>
+                    <option value="">Guiné-Bissau</option>
+                    <option value="">Moçambique</option>
+                    <option value="">São Tomé e Principe</option>
+                    <option value="">Portugal</option>
+                </select>
+                <br><br>
+            </div>
+
+            <div id="fotoPerfil">
+                <label for="foto">Foto de perfil:</label>
+                <input id="foto" type="file">
+                <br><br>
+            </div>
+
+            <div id="submissao">
+                <input type="submit" value="Registar">
+                <input type="reset" value="Limpar">
+            </div>
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
